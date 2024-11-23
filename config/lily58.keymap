@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        win-mode {
+            bindings = <&tog 3>;
+            key-positions = <53 42 43 54>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -71,6 +80,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        win-mode {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans     &trans  &trans  &trans
+                        &trans  &trans  &kp LCTRL  &trans    &trans  &trans  &trans  &kp RMETA
+            >;
         };
     };
 };
