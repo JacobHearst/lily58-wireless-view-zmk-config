@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
@@ -33,7 +32,7 @@
             display-name = "Base";
             bindings = <
 &kp ESC     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                           &kp N6    &kp N7  &kp N8      &kp N9   &kp N0    &kp GRAVE
-&kt TAB     &kp Q   &kp W   &kp E     &kp R   &kp T                            &kp Y     &kp U   &kp I       &kp O    &kp P     &kp MINUS
+&kp TAB     &kp Q   &kp W   &kp E     &kp R   &kp T                            &kp Y     &kp U   &kp I       &kp O    &kp P     &kp MINUS
 &kp LSHIFT  &kp A   &kp S   &kp D     &kp F   &kp G                            &kp H     &kp J   &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LCTRL   &kp Z   &kp X   &kp C     &kp V   &kp B     &kp LBKT     &kp RBKT  &kp N     &kp M   &kp COMMA   &kp DOT  &kp FSLH  &kp BACKSLASH
                             &kp LALT  &mo 1   &kp LGUI  &kp SPACE    &kp RET   &kp BSPC  &mo 2   &kp RSHIFT
@@ -72,10 +71,10 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+&trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans     &trans    &trans
+&kp GRAVE  &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &kp UP     &trans     &trans    &trans
+&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp RIGHT  &trans    &trans
+&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
                            &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
             >;
 
@@ -84,11 +83,11 @@
 
         win-mode {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans     &trans  &trans  &trans
-                        &trans  &trans  &kp LCTRL  &trans    &trans  &trans  &trans  &kp RMETA
+&trans  &trans  &trans  &trans    &trans  &trans                      &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans                      &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans                      &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans  &trans  &trans
+                        &kp LGUI  &trans  &kp LALT  &trans    &trans  &trans  &trans  &kp RMETA
             >;
         };
     };
