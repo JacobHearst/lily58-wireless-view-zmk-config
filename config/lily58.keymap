@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         win-mode {
-            bindings = <&tog 3>;
+            bindings = <&tog 0>;
             key-positions = <53 42 43 54>;
         };
     };
@@ -37,8 +37,6 @@
 &kp LCTRL   &kp Z   &kp X   &kp C     &kp V   &kp B     &kp LBKT     &kp RBKT  &kp N     &kp M   &kp COMMA   &kp DOT  &kp FSLH  &kp BACKSLASH
                             &kp LALT  &mo 1   &kp LGUI  &kp SPACE    &kp RET   &kp BSPC  &mo 2   &kp RSHIFT
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -57,8 +55,6 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -75,19 +71,7 @@
 &kp GRAVE  &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &kp UP     &trans     &trans    &trans
 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp RIGHT  &trans    &trans
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        win-mode {
-            bindings = <
-&trans  &trans  &trans  &trans    &trans  &trans                      &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans                      &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans                      &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans  &trans  &trans
-                        &kp LGUI  &trans  &kp LALT  &trans    &trans  &trans  &trans  &kp RMETA
+                           &trans   &trans   &trans   &trans    &trans  &kp DEL      &trans     &trans
             >;
         };
     };
