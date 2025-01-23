@@ -44,8 +44,8 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans      &trans                &trans                 &trans   &trans   &trans
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7      &kp F8                &kp F9                 &kp F10  &kp F11  &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans   &trans   &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &trans   &kp PIPE
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans   &trans   &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &trans   &trans
                                         &trans        &trans        &trans        &trans    &trans  &kp DELETE  &trans                &trans
             >;
 
@@ -62,11 +62,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans              &trans     &trans     &trans     &trans               &trans
-&kp GRAVE  &trans  &trans  &trans   &trans   &trans                     &trans              &trans     &kp UP     &trans     &trans               &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &kp LC(LEFT_ARROW)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp RC(RIGHT_ARROW)  &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT             &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans              &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans              &trans    &trans    &trans     &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans              &trans    &kp UP    &trans     &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LC(LEFT_ARROW)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RC(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans    &trans    &trans     &trans               &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans              &trans    &trans
             >;
         };
     };
